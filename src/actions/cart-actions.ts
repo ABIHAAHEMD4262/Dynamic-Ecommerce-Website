@@ -5,7 +5,7 @@ import prisma from "@/lib/prisma";
 import { Product } from "@/sanity.types";
 import { urlFor } from "@/sanity/lib/image";
 import { revalidatePath } from "next/cache";
-import { cookies } from "next/headers";
+
 
 export const createCart = async () => {
     const { user } = await getCurrentSession();
